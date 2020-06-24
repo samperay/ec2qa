@@ -8,6 +8,6 @@ resource "aws_instance" "example" {
   count             = "${var.inst_counts}"
 
   tags = {
-    Name = "example"
+    Name = "${var.name}"
   }
 }
